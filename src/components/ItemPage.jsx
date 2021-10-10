@@ -17,13 +17,13 @@ const ItemPage = (props) => {
     const handleCloseItem = () => {
         setModelIsOpen(false)
         setNumItem(1)
-
     }
 
     const handleAddToCart = (item) => {
         if(numItem === 0) {
             return 
         }
+        
         //If item exists in cart:
         const itemExists = cartItems.find((cartItem) => cartItem.id === item.id)
         if(itemExists) {

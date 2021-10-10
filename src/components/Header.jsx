@@ -9,6 +9,7 @@ const Header = () => {
 
     const history = useHistory()
     let num = 0
+    
     cartItems.forEach(item => {
         num = num + item.amount
         setNumItemsInCart(num)

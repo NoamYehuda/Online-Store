@@ -6,7 +6,7 @@ export const editCart = ({type, item, numItem}) => {
                 ...item,
                 amount: numItem
             }
-    }
+        }
     )
 }
 

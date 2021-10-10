@@ -8,7 +8,6 @@ const itemsReducers = (state, action) => {
             ]
 
         case 'UPDATE_CART':   
-            // console.log('update:',action.item)
             const items = state.filter((item) => item.id !== action.item.id)
             return [
                 ...items,
@@ -21,13 +20,8 @@ const itemsReducers = (state, action) => {
             return newCart
 
         case "EDIT_AMOUNT":
-            // console.log(action.item)
             return state.map((item) => {
                 if(item.id === action.id) {
-                    console.log({
-                        ...item,
-                        ...action.amount
-                    });
                     return {
                         ...item,
                         ...action.amount

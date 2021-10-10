@@ -22,7 +22,7 @@ const CategoryPage = (props) => {
     ]
 
     const category = items.find((item) => item.title.toLowerCase() === props.match.params.category )
-    console.log( props.match.params.category);
+
     return (
             <div className="items_cards">
                 {category.items.map((item, index) => {
